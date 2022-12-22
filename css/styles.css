@@ -40,6 +40,8 @@ button:hover,
 button:focus{
     background-color: var(--color_iris);
     color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .nonameh2{
     display: none;
@@ -100,7 +102,9 @@ h1{
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
-    background-image: url("./image/header.png");
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
@@ -362,6 +366,9 @@ a{
 .customers_svg li:hover, :focus{
     border: 1px solid var(--color_iris);
 }
+.customers_svg use:hover, :focus{
+    fill: var(--color_iris);
+}
 .footer_social{
     margin-left: 120px;
 }
@@ -375,4 +382,10 @@ a{
 }
 .footer_social_svg li:not(:last-child){
     margin-right: 16px;
+}
+.footer_social_svg use{
+    fill: #ffff;
+}
+.footer_social_svg use:hover, :focus{
+    fill: var(--color_green);
 }
